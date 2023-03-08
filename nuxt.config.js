@@ -25,14 +25,17 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'canonical', href: 'サイトURL' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' }
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap'},
+      { rel: 'stylesheet', href: 'https://unpkg.com/aos@2.1.1/dist/aos.css'},
     ],
     script: [
       {
         src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js',
         defer: true,
         // body: true
-      }
+      },
+      { src: 'https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js', defer: true }
     ],
   },
 

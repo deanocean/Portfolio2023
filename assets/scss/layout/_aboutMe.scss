@@ -1,0 +1,15 @@
+.l-aboutMe {
+  width: fit-content;
+  margin: auto;
+
+  &_name {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 2em;
+  }
+
+  &_iconlink {
+    margin-top: 6rem;
+    display: inline-block;
+  }
+}

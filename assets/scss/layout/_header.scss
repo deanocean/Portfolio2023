@@ -1,0 +1,49 @@
+.l-header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  
+  &_cont {
+    padding: 3rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  &_logo {
+    width: 72px;
+    height: auto;
+  }
+
+  &_nav {
+    &_list {
+      display: flex;
+      gap: 4rem;
+    }
+
+    &_item {
+      
+    }
+
+    &_link {
+      letter-spacing: 0.1em;
+      font-weight: 400;
+
+      &.is-active {
+        text-decoration: underline;
+      }
+
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        width: 1.4rem;
+        height: 1.4rem;
+        position: relative;
+        bottom: 1px;
+      }
+    }
+  }
+}

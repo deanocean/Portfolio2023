@@ -1,0 +1,24 @@
+.l-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 3rem 4rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  
+  &_iconlink {
+    padding-right: 2rem;
+    padding-top: 2rem;
+
+    img {
+      height: auto;
+    }
+  }
+
+  &_copy {
+    transform:  translateX(100%) rotate(-90deg);
+    transform-origin: 0% 100%;
+  }
+}
