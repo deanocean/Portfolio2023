@@ -6,10 +6,19 @@
     font-weight: 500;
     font-size: 1.6rem;
     margin-bottom: 2em;
+
+    @include sp {
+      font-size: 1.4rem;
+      margin-bottom: 1em;
+    }
   }
 
   &_iconlink {
     margin-top: 6rem;
     display: inline-block;
+
+    @include sp {
+      
+    }
   }
 }

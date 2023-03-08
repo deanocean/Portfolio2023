@@ -3,6 +3,12 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 12rem 12.5%;
 
+  @include sp {
+    grid-template-columns: 1fr;
+    gap: 6rem;
+    padding: 0 2rem;
+  }
+
   > * {
     width: 100%;
   }
@@ -12,5 +18,13 @@
   &_info {
     margin-top: 2rem;
     font-size: 1.2rem;
+
+    @include sp {
+      margin-top: 1rem;
+    }
+  }
+
+  &_img {
+    width: 100%;
   }
 }

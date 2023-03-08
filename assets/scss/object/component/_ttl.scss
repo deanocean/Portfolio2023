@@ -6,4 +6,8 @@
   text-align: center;
   color: $color-gray;
   line-height: 1;
+
+  @include sp {
+    margin-bottom: 1em;
+  }
 }

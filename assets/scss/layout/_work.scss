@@ -6,16 +6,34 @@
     margin: auto;
     justify-content: space-evenly;
 
+    @include sp {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
     &_cont {
       width: 35%;
       padding: 0 3rem 0 4rem;
+
+      @media screen and (max-width: 1000px) {
+        padding-left: 2rem;
+      }
+
+      @include sp {
+        width: 100%;
+        padding: 0 0 0 5%;
+      }
     }
   }
   
   &_ttl {
     font-size: 2.4rem;
     font-weight: 300;
-    line-height: 1.2;
+    line-height: 1.5;
+
+    @include sp {
+      font-size: 1.8rem;
+    }
   }
 
   &_date {
@@ -24,11 +42,20 @@
 
   &_info {
     width: 65%;
+
+    @include sp {
+      width: 95%;
+      margin-left: auto;
+    }
   }
   
   &_mv {
     width: 100%;
     height: calc(100vh - 23rem);
+
+    @include sp {
+      height: 20rem;
+    }
   
     > img {
       width: 100%;
@@ -45,34 +72,59 @@
     font-weight: 400;
     text-decoration: underline;
     margin-top: 2rem;
+
+    @include sp {
+      font-size: 1.4rem;
+    }
   }
 
   &_table {
     margin-top: 8rem;
+    
+    @include sp {
+      margin-top: 4rem;
+    }
 
     &_row {
     }
 
     &_ttl {
       width: 6em;
-      padding-bottom: 2rem;
       font-weight: 400;
+      padding-bottom: 2rem;
+
+      @include sp {
+        padding-bottom: 1rem;
+      }
     }
 
     &_cont {
       padding-bottom: 2rem;
+
+      @include sp {
+        padding-bottom: 1rem;
+      }
     }
   }
 
   &_desc {
     margin-top: 4rem;
     padding-right: 1em;
+
+    @include sp {
+      margin-top: 2rem;
+    }
   }
 
   &_video {
     background-color: $color-grayLight;
     padding: 10rem 0;
     margin-top: 10rem;
+
+    @include sp {
+      padding: 4rem 0;
+      margin-top: 4rem;
+    }
 
     &_box {
       height: 0;
@@ -91,6 +143,10 @@
 
   &_pcCapture {
     margin-top: 10rem;
+
+    @include sp {
+      margin-top: 4rem;
+    }
   }
 
   &_spCapture {
@@ -98,6 +154,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
+
+    @include sp {
+      margin-top: 4rem;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+    }
   }
 
   &_back {
@@ -109,5 +171,10 @@
     border-bottom: 1px solid $color-dark;
     font-size: 2rem;
     gap: 5rem;
+    
+    @include sp {
+      font-size: 1.4rem;
+      margin-top: 6rem;
+    }
   }
 }

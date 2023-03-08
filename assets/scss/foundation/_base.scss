@@ -35,7 +35,7 @@ html {
   -webkit-text-size-adjust: 100%;
   
   @include sp {
-    font-size: calc(100vw / 32);
+    font-size: calc(100vw / 37.5);
   }
 
   // @media screen and (max-width: 374px) {
@@ -52,6 +52,10 @@ body {
   letter-spacing: 0.06em;
   color: $color-dark;
 
+  @include sp {
+    font-size: 1.2rem;
+  }
+
   &.is-active {
     overflow: hidden;
   }
@@ -65,6 +69,10 @@ body {
 
 main {
   padding: 23rem 0 20rem;
+
+  @include sp {
+    padding: 10rem 0 6rem;
+  }
 }
 
 a {

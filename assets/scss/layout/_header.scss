@@ -4,23 +4,39 @@
   left: 0;
   top: 0;
   z-index: 100;
+
+  @include sp {
+    background-color: #fff;
+  }
   
   &_cont {
     padding: 3rem 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 1000px) {
+      padding: 2rem;
+    }
   }
   
   &_logo {
     width: 72px;
     height: auto;
+
+    @include sp {
+      width: 5rem;
+    }
   }
 
   &_nav {
     &_list {
       display: flex;
       gap: 4rem;
+
+      @include sp {
+        gap: 2rem;
+      }
     }
 
     &_item {
